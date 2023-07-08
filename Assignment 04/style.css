@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(255, 208, 0); */
+    font-family: sans-serif;
+    animation-name: animatebackground;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animatebackground{
+    0%{
+        background-color: orange;
+        background-position: 0 100%;
+    }
+    30%{
+        background-color: rgb(15, 72, 15);
+        background-position: 0 100%;
+    }
+    50%{
+        background-color: rgba(179, 179, 37, 0.919);
+        background-position: 100% 0;
+    }
+    100%{
+        background-color: orange;
+        background-position: 0 100%;
+    }
+}
+
+.menu{
+    display: flex;
+    margin: 5vh 8vw;
+}
+
+.menu img{
+    width: 12vw;
+    height: 10vh;
+    
+}
+
+ul{
+    display: flex;
+    margin: 6vh 2vw;
+    padding-left: 3vw;
+    list-style: none;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    padding: 2vw;
+}
+
+.menu ul li :hover{
+    cursor: pointer;
+    background-color: black;
+    color: wheat;
+    padding: 1VH 1VW;
+    border-radius: 10PX;
+}
+
+.button{
+    margin-top: 4vh;
+    margin-left: 4vw;
+    margin-bottom: 4vh;
+    font-weight: 900;
+    background-color: rgb(3, 102, 3);
+    color: white;
+    padding: 1vw 1vh;
+    border-radius: 10px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: brown;
+    color: wheat;
+}
+
+.center{
+    display: flex;
+}
+
+.left{
+    width: 40vw;
+    height: 5vh;
+    margin: 14vh 10vw;
+    color: white;
+    font-weight: 100;
+    line-height: 1vh;
+}
+
+h1{
+    font-size: 60px;
+    animation-name: animationh1;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+}
+
+h2{
+    font-size: 45px;
+    line-height: 5vh;
+}
+
+p{
+    font-size: 20px;
+    line-height: 3vh;
+}
+
+@keyframes animationh1{
+    0%{
+        transform: translateX(0vw);
+        color: rgb(15, 72, 15);
+    }
+    50%{
+        transform: translateX(12vw);
+        color: orange;
+    }
+    100%{
+        transform: translateX(0vw);
+        color: rgba(179, 179, 37, 0.919);
+    }
+}
+
+.right{
+    width: 1vw;
+    height: 4vh;
+    
+}
+
+.bottle{
+    position: absolute;
+    transform: scale(0);
+    width: 20vh;
+    top: 30vh;
+}
+
+.topical{
+    animation-name: animationimg1;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transition: 5s;
+}
+
+@keyframes animationimg1{
+    10%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(0.8) rotate(20deg);
+    }
+    90%{
+        transform: translateX(22vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+.apple{
+    animation-name: animationimg2;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transition: 5s;
+}
+
+@keyframes animationimg2{
+    10%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(0.8) rotate(20deg);
+    }
+    90%{
+        transform: translateX(22vw);
+    }
+    100%{
+        transform: translateX(11vw);
+    }
+}
+
+.orange{
+    animation-name: animationimg3;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transition: 5s;
+}
+
+@keyframes animationimg3{
+    10%{
+        transform: scale(0.5) rotate(20deg);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: translateX(22vw);
+    }
+}
