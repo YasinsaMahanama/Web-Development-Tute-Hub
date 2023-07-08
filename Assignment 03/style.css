@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(Images/background\ image.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.image img{
+    width: 10vw;
+    position: relative;
+    top: 28vh;
+    left: 10vw;
+    animation-name: logoimage;
+    animation-duration:34s;
+    perspective: 150px;
+    animation-fill-mode: backwards;
+    /*animation-timing-function: cubic-bezier(.96,1.12,0,-0.45);*/
+}
+
+
+
+@keyframes logoimage{
+    2%{
+        transform: none;
+    }
+
+    100%{
+        transform:  translateX(50vw) scale(0);
+}
+}
+
+.image1 img{
+    position: relative;
+    top: 45vh;
+    left: 0vw;
+}
+
+
+.image2 img{
+    width: 13vw;
+    height: 30vh;
+    position: relative;
+    top: 16vh;
+    left: 10vw;
+}
+
+
+.imgs img{
+    animation-iteration-count: 5;
+    animation-duration: 5s;
+    animation-name: logoimage1;
+    
+}
+
+/*.imgs img:hover{
+    transform: translateX(1300px);
+    transition: 3s;
+}*/
+
+@keyframes logoimage1{
+    0%{
+        transform:translateX(1vw);
+    }
+    100%{
+        transform: translateX(100vw);
+    }
+}
+
+
+
+.image3 img{
+    position: relative;
+    width: 15vw;
+    height: 10vh;
+    top: 0vh;
+    left: 10vw;
+    animation-name: logoimage2;
+    animation-fill-mode: backwards;
+    animation-duration: 30s;
+}
+
+/*.image3 img:hover{
+    transform: translateX(1300px) translateY(1300px);
+    transition: 3s;
+}*/
+
+@keyframes logoimage2{
+    0%{
+        transform: translatex(1vw);
+    }
+    100%{
+        transform: translatex(80vw) scale(0);
+    }
+}
