@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    background-image: url(Images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+header{
+    display: flex;
+}
+
+.img1{
+    width: 18vw;
+    height: 20vh;
+    margin-left: 5vw;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-top: 9vh;
+    margin-left: 1vw;
+}
+
+ul li a{
+    text-decoration: none;
+    margin: 2vh 2vw;
+    color: black;
+    font-weight: 600;
+}
+
+/* ul li a:hover{ 
+    cursor: pointer;
+    color: wheat;
+    background-color: black;
+    padding: 1vh 1vw;
+} */
+
+.img2{
+    width: 0.1vw;
+    height: 0.1vh;
+    margin-top: 4vh;
+    margin-left: 18vw;
+    cursor: pointer;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(165, 95, 182);
+    padding: 1.5vh 1.5vw;
+    border-radius: 1vh;
+}
+
+.nav{
+    display: flex;
+}
+
+.menu{
+    width: 35vw;
+    margin-left: 13vw;
+    margin-top: 10vh;
+}
+
+.p1{
+    font-size: 50px;
+    font-weight: 0;
+}
+
+.img3{
+    width: 2.5vw;
+    height: 5vh;
+    margin-right: 3vw;
+    margin-top: 2vh;
+}
+
+.img4{
+    width: 2.5vw;
+    height: 5svh;
+    margin-top: 2vh;
+}
+
+.img5{
+    width: 40vw;
+    height: 70vh;
+}
+
+.center{
+    align-items: center;
+    margin-left: 25vw;
+    padding-bottom: 10vh;
+    padding-top: 2vh;
+}
+
+h1{
+    /* text-align: center; */
+    margin-left: 15vw;
+    font-size: 50px;
+}
+
+
+.img6{
+    margin: 0.7vw;
+    animation-name: animateimg6;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 6;
+}
+
+@keyframes animateimg6{
+    0%{
+        transform: translateX(1vw);
+    }
+    100%{
+        transform: translateX(35vw);
+    }
+}
+
+.img8{
+    margin: 0.7vw;
+    animation-name: animateimg8;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 6;
+}
+
+@keyframes animateimg8{
+    0%{
+        transform: translateX(0vw);
+    }
+    100%{
+        transform: translateX(-35vw);
+    }
+}
+
+.img7{
+    margin: 0.7vw;
+    animation-name: animateimg7;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 6;
+}
+
+@keyframes animateimg7{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(30deg)
+    }
+}
